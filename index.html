@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pinlty Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sideBar">
+        <h1>📘 Pinlty Docs</h1>
+        <ul>
+          <li class="file" data-page="intro">Introduction</li>
+          <li class="file" data-page="setup">Setup</li>
+          <li class="file" data-page="usage">Usage</li>
+
+          <li class="folder">
+            <span class="folder-title">Editor</span>
+            <ul class="nested">
+              <li class="file" data-page="editor-overview">Overview</li>
+              <li class="file" data-page="editor-assets">Assets</li>
+            </ul>
+          </li>
+
+          <li class="folder">
+            <span class="folder-title">Coding</span>
+            <ul class="nested">
+              <li class="file" data-page="coding-pin">.Pin</li>
+              <li class="file" data-page="coding-pinm">.PinM</li>
+              <li class="file" data-page="coding-pino">.PinO</li>
+              <li class="file" data-page="coding-pins">.PinS</li>
+            </ul>
+          </li>
+
+          <li class="file" data-page="faq">FAQ</li>
+        </ul>
+        <div class="resizer" id="resizer"></div>
+      </aside>
+
+      <!-- Main content -->
+      <main class="content" id="content">
+        <div class="top-bar">
+          <button id="editBtn">✏ Edit Mode</button>
+          <button id="downloadBtn">⬇ Download Docs</button>
+        </div>
+        <h2>Welcome to Pinlty Documentation</h2>
+        <p>Select a topic from the sidebar to get started.</p>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
